@@ -10,22 +10,35 @@ body {
     margin-right: 10px;
 }
 
-/* Add styling to indicate the drop area during drag-and-drop */
-#taskList {
-    list-style-type: none;
-}
-
-#taskList li {
+li {
     margin: 10px 0;
     padding: 10px;
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 10%);
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 10%);
     transition: box-shadow 0.3s ease;
 }
 
-#taskList li:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 20%);
+li:hover {
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 20%);
+}
+
+/* Add styling to indicate the drop area during drag-and-drop */
+#task-List {
+    list-style-type: none;
+}
+
+#task-List li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 10%);
+    transition: box-shadow 0.3s ease;
+}
+
+#task-List li:hover {
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 20%);
 }
 
 #app {
@@ -34,7 +47,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 10%);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 10%);
 }
 
 button {
@@ -54,19 +67,6 @@ button:hover {
 ul {
     list-style-type: none;
     padding: 0;
-}
-
-li {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 10%);
-    transition: box-shadow 0.3s ease;
-}
-
-li:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 20%);
 }
 
 .completed {
