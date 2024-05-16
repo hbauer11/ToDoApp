@@ -19,8 +19,7 @@ jobs:
       - name: Lint Code Base
         uses: super-linter/super-linter@v6.5.0
         env: 
-          VALIDATE_JAVASCRIPT_ES: false
+          VALIDATE_ALL_CODEBASE: false
           VALIDATE_HTML: true
           VALIDATE_CSS: true
-          VALIDATE_JAVASCRIPT_STANDARD: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
