@@ -1,8 +1,13 @@
-const { addTask, deleteTask, toggleTask, tasks } = require('./app');  // Adjust the path if necessary
+const { JSDOM } = require('jsdom');
+const jsdom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
+global.document = jsdom.window.document;
+global.window = jsdom.window;
+
+const { addTask, deleteTask, toggleTask, tasks } = require('./app');
 
 describe('ToDo List Tests', () => {
   beforeEach(() => {
-    // Clear the tasks array before each test
+
     tasks.length = 0;
   });
 
@@ -13,7 +18,7 @@ describe('ToDo List Tests', () => {
     expect(tasks[0].completed).toBe(false);
   });
 
-  test = test('Delete a task', () => {
+  test = ('Delete a task', () => {
     addTask('Task to be deleted');
     const taskId = tasks[0].id;
     deleteTask(taskId);
