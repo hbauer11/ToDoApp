@@ -6,21 +6,21 @@ describe('ToDo List Tests', () => {
     tasks.length = 0;
   });
 
-  testAddTask = ('Add a task', () => {
+  test = ('Add a task', () => {
     addTask('New Task');
     expect(tasks).toHaveLength(1);
     expect(tasks[0].text).toBe('New Task');
     expect(tasks[0].completed).toBe(false);
   });
 
-  testDeleteTask = test('Delete a task', () => {
+  test = test('Delete a task', () => {
     addTask('Task to be deleted');
     const taskId = tasks[0].id;
     deleteTask(taskId);
     expect(tasks).toHaveLength(0);
   });
 
-  testToggleTask = ('Toggle a task\'s completion', () => {
+  test = ('Toggle a task\'s completion', () => {
     addTask('Task to be toggled');
     const taskId = tasks[0].id;
     toggleTask(taskId);
