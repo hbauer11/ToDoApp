@@ -1,4 +1,4 @@
-test('Delete a task from the list', () => {
+test = ('Delete a task from the list', () => {
   // Add a task
   addTask('Task to be deleted');
 
