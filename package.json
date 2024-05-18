@@ -5,18 +5,16 @@
     "globals": "^15.0.0",
     "jest": "^29.7.0"
   },
-  
-  "dependencies": {
-    "jsdom": "^16.4.0" 
-  },
   "scripts": {
     "lint": "eslint .",
-    "test": "node unittests.test.js"
+    "test": "jest"
   },
   "jest": {
     "testMatch": [
       "unittests.test.js"
     ]
+  },
+  "dependencies": {
+    "jsdom": "^24.0.0"
   }
-  
 }
