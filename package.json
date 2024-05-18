@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "jest"
+    "test": "node unittests.test.js"
   },
   "jest": {
     "testMatch": [
