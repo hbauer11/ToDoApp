@@ -1,4 +1,4 @@
-test('Mark a task as completed', () => {
+test = ('Mark a task as completed', () => {
   // Add a task
   addTask('Task to be completed');
 
