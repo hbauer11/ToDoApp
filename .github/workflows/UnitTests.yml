@@ -15,6 +15,5 @@ jobs:
           fetch-depth: 0
           
       - name: Run Unit Tests
-        run:
-        node unittests.test.js
+        run: node unittests.test.js
         
